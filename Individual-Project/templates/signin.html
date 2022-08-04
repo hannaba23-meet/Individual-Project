@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signin</title>
+
+    <style type="text/css">
+    body {
+        background-color: #cccccc;
+        text-align: center;
+    }
+    
+    .button {
+        transition-duration: 0.4s;
+    }
+
+    .button:hover {
+        background-color: #4CAF50; /* Green */
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <form method="post" action="/signin">
+
+        <h4>
+        Log in to your account
+        </h4>
+
+        <p >
+        Please fill up your information below to sign in.
+        </p>
+
+        <div>
+            <label>Email address:</label>
+            <div>
+                <input type="email"  name="email" id="emailStr" required>
+            </div>
+        </div>
+
+        <div>
+            <label>Password:</label>
+            <div class="input-group">
+                <input type="password"  name="password" minlength="6">
+            </div>
+        </div>
+
+        <div>
+            <input class="button" type="submit"/>
+        </div>
+    </form>
+    <br>
+    <a href="/signup"><button class="button">signup</button></a>
+</body>
+</html>
